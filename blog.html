@@ -18,7 +18,7 @@
     <p>
         <strong>1. What are the differences between localStorage and sessionStorage?</strong>
         <br>
-        When some data is stored in localStorage, it remains. On the other hand, when data is stored in sessionStorage, it does not remain stored after the browser is closed. It is only available during the browser session. But the data in the localStorage can be accessed after closing the current browser session and opening it again later at any time.
+        When some data is stored in localStorage, it remains. On the other hand, when data is stored in sessionStorage, it does not remain stored after the browser is closed. It is only available during the browser session. But the data in the localStorage can be accessed after closing the current browser session and opening it again later at any time. localStorage can save more data in size than sessionStorage.
     </p>
     <p>
         <strong>2. What are the differences between global scope and block scope?</strong>
@@ -36,13 +36,14 @@
         There are 8 ways to get undefined:
         <br>
         <ol>
-            <li>If a variable is not initialized before usage.</li>
-            <li>If a function has no return statement, the return value will be undefined.</li>
-            <li>If a parameter of a function is not passed into it, the parameter inside the function will be undefined.</li>
-            <li>If return has nothing on the right side: <strong>return ;</strong> like this, then it will return undefined in a function.</li>
-            <li>A property that does not exist in an object will give undefined.</li>
-            <li>If an array element is accessed outside of its actual index range.</li>
-            <li>If the value is directly set to undefined.</li>
+            <li>If a variable is not initialized before usage</li>
+            <li>If a function has no return statement, the return value will be undefined</li>
+            <li>If a parameter of a function is not passed into it, the parameter inside the function will be undefined</li>
+            <li>If return inside a function has nothing on the right side: <strong>return ;</strong> like this, then it will return undefined</li>
+            <li>A property that does not exist in an object will give undefined</li>
+            <li>If an array element is accessed outside of its actual index range</li>
+            <li>If an element is deleted inside an array</li>
+            <li>If the value is directly set to undefined</li>
         </ol>
     </p>
 </body>
