@@ -201,4 +201,7 @@ button {
     grid-template-columns: repeat(3,25%);
     justify-content: space-around;
   }
+  .card{
+    flex-direction: column;
+  }
 }
