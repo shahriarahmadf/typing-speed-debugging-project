@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<style>
+    body{
+        margin: 10%;
+    }
+</style>
+<body>
+
+    <h1>Blog: Important Questions</h1>
+    <br>
+    <p>
+        <strong>1. What are the differences between localStorage and sessionStorage?</strong>
+        <br>
+        When some data is stored in localStorage, it remains. On the other hand, when data is stored in sessionStorage, it does not remain stored after the browser is closed. It is only available during the browser session. But the data in the localStorage can be accessed after closing the current browser session and opening it again later at any time.
+    </p>
+    <p>
+        <strong>2. What are the differences between global scope and block scope?</strong>
+        <br>
+        Under global scope, the variable is declared outside any block (of a loop or conditional statement) and is accessible in everywhere of the program. Under block scope, the variable is declared inside a block (of a loop or conditional statement) and can only be accessed under that block.
+    </p>
+    <p>
+        <strong>3. How does JavaScript event loop work?</strong>
+        <br>
+        The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process. (Source: geekflare.com)
+    </p>
+    <p>
+        <strong>4. In how many ways can we get undefined?</strong>
+        <br>
+        There are 8 ways to get undefined:
+        <br>
+        <ol>
+            <li>If a variable is not initialized before usage.</li>
+            <li>If a function has no return statement, the return value will be undefined.</li>
+            <li>If a parameter of a function is not passed into it, the parameter inside the function will be undefined.</li>
+            <li>If return has nothing on the right side: <strong>return ;</strong> like this, then it will return undefined in a function.</li>
+            <li>A property that does not exist in an object will give undefined.</li>
+            <li>If an array element is accessed outside of its actual index range.</li>
+            <li>If the value is directly set to undefined.</li>
+        </ol>
+    </p>
+</body>
+</html>
